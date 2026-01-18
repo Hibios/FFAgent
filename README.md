@@ -1,39 +1,32 @@
 # 🚀 FFAgent
 
-**The next-generation AI Copilot agent that transforms structural intent into production-ready interfaces.**
+**The AI-Agent orchestrated by SMUX: Bridge the gap between No-Code visual logic and high-end Frontend production.**
 
-FFAgent is a specialized AI agent designed to automate the entire frontend development lifecycle. Unlike traditional LLMs that require verbose prompting, FFAgent leverages **SMUX (Structured Markup User Experience) syntax** to generate high-fidelity UI components, pages, and complex application structures across any modern UI framework.
-
----
-
-## ✨ Key Features
-
-*   **Zero-Prompt Engineering:** Generate complex layouts using logic-based SMUX syntax instead of unpredictable natural language prompts.
-*   **Universal UI Support:** Native support for **HeroUI, shadcn/ui, MaterialUI (MUI)**, Mantine, and custom design systems.
-*   **Context-Aware Evolution:** The agent doesn't just create; it maintains. It understands your project architecture to update, refactor, and scale existing codebases.
-*   **Structure-First Approach:** Automatically handles imports, types (TypeScript), and folder structures following industry best practices.
-*   **Atomic Design Implementation:** Generates everything from atoms (buttons, inputs) to complex organisms (data grids, multi-step forms) with strict adherence to the chosen UI kit's philosophy.
-
-## 🛠 Supported Stack
-
-FFAgent is framework-agnostic but optimized for:
-- **React / Next.js / Vue 3**
-- **Tailwind CSS / Emotion / Styled Components**
-- **TypeScript** (strictly typed outputs)
-
-## ⚡ Quick Example (SMUX Syntax)
-
-Skip the chat. Define the structure:
-
-`AppLayout > Navbar[links:4] + Sidebar[collapsible] + [Header, StatsGrid{Card*4}, ChartsSection] > Footer`
-
-**FFAgent Output:** A fully functional, responsive dashboard page with all components integrated from your chosen UI library.
+FFAgent is a specialized AI agent designed to transform **SMUX (Structured Markup User Experience)** — a proprietary syntax generated in a dedicated no-code builder — into fully functional, production-ready frontend code.
 
 ---
 
-## 🚀 Why FFAgent?
+## 🧩 What is SMUX?
 
-Traditional AI assistants often hallucinate or write disconnected code. **FFAgent** acts as a senior frontend engineer who knows your UI library documentation by heart. It ensures:
-1. **Consistency:** No mix-and-match styles; it follows your system's rules.
-2. **Speed:** Go from wireframe logic to production code in seconds.
-3. **Maintainability:** Clean, modular code that follows the "Component-First" paradigm.
+**SMUX** is a specialized structural syntax designed by FFAgent to define UI architecture without the ambiguity of natural language. It describes layout, logic, and component placement in a machine-readable format.
+
+**Example SMUX input:**
+```xml
+<flex>
+    dir:column
+    justify:start
+    align:stretch
+    width:1440
+    height:900
+    <flex>
+        dir:row
+        justify:between
+        padding:10
+        height:50
+        <widget>
+            type:Button
+            content:"File"
+            notes:"Project management dropdown"
+        </widget>
+    </flex>
+</flex>
